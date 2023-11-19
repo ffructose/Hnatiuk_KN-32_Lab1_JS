@@ -9,7 +9,7 @@
 .body {
     font-family: "myFont";
     width: 100vw;
-    
+
     background-color: rgb(255, 213, 251);
 }
 
@@ -31,6 +31,94 @@
     font-size: 2.5vw;
     line-height: 4vw;
     font-weight: 300;
+}
+
+.menu {
+    background-color: rgb(252, 192, 229);
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+}
+
+.menu-list li {
+    display: inline-block;
+}
+
+.menu-list li:after {
+    content: "|";
+    color: brown;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    font-family: "myFont";
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-list a,
+.menu-list a:visited {
+    color: brown;
+
+}
+
+.menu-list a:hover {
+    color: beige;
+}
+
+.menu-list a::before,
+.menu-list a::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 0%;
+    bottom: -5%;
+    left: 150%;
+    background: burlywood;
+    transition: .8s;
+}
+
+.menu-list a:hover::before,
+.menu-list .current:before{
+    left:0;
+}
+
+.menu-list>a:hover::after,
+.menu-list .current:after{
+    left:0;
+}
+
+@media (max-width: 550px){
+    .menu-list{
+        padding-top: 0;
+    }
+
+    .menu-list li {
+        display: block;
+    }
+
+    .menu-list li::after {
+        content: none;
+    }
+
+    .menu-list a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
 }
 
 .task {
