@@ -9,7 +9,6 @@
 .body {
     font-family: "myFont";
     width: 100vw;
-
     background-color: rgb(255, 213, 251);
 }
 
@@ -17,20 +16,6 @@
     text-align: center;
     background-color: rgb(225, 181, 255);
     width: 100vw;
-}
-
-.header>h1 {
-    font-family: "myFont";
-    font-size: 4.5vw;
-    line-height: 5vw;
-    font-weight: 500;
-}
-
-.header>h2 {
-    font-family: "myFont";
-    font-size: 2.5vw;
-    line-height: 4vw;
-    font-weight: 300;
 }
 
 .menu {
@@ -102,7 +87,138 @@
     left:0;
 }
 
-@media (max-width: 550px){
+
+
+.task {
+    padding-top: 2vw;
+    text-align: center;
+    width: 90vw;
+    padding-left: 5vw;
+}
+
+.p-list {
+    text-align: start;
+    padding-top: 3vw;
+}
+
+.result {
+    padding-left: 5%;
+    width: 95%;
+    background-color: pink;
+}
+
+.b-button {
+    background-color: cornflowerblue;
+    font-family: "myFont";
+    border: none;
+    color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.b-button:hover {
+    background-color: rgb(168, 112, 201);
+}
+
+
+
+.header>h1 {
+    font-family: "myFont";
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.header>h2 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.task>h3 {
+    font-family: "myFont";
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+.task>p {
+    font-family: "myFont";
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.p-text {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+}
+
+.result>h1 {
+    font-family: "myFont";
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px){
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+    
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 20px;
+        font-weight: 800;
+    }
+    
+    .task>p {
+        font-family: "myFont";
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+    
+    .p-text {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    
+    
+    }
+    
+    .result>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 800;
+    }
+
+
+
     .menu-list{
         padding-top: 0;
     }
@@ -113,84 +229,94 @@
 
     .menu-list li::after {
         content: none;
+        font-size: 30px;
     }
 
     .menu-list a {
-        padding: 25px 0 20px;
+        padding: 15px 0 15px;
         margin: 0 30px;
+        font-size: 30px;
+        line-height: 10px;
+    }
+
+    .b-button {
+        padding: 15px 15px 15px 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-size: 25px;
     }
 }
 
-.task {
-    padding-top: 2vw;
-    text-align: center;
-    width: 90vw;
-    padding-left: 5vw;
-
-}
-
-.task>h3 {
-    font-family: "myFont";
-    font-size: 3vw;
-    line-height: 4vw;
-    font-weight: 800;
-}
-
-.task>p {
-    font-family: "myFont";
-    font-size: 2vw;
-    line-height: 2vw;
-    font-weight: 200;
-}
-
-.p-list {
-    text-align: start;
-    padding-top: 3vw;
-}
-
-.p-text {
-    text-align: center;
-    padding-top: 2vw;
-    padding-bottom: 3vw;
-
-
-}
-
-.result {
-    padding-left: 5%;
-    width: 95%;
-    background-color: pink;
-
-
-}
-
-.result>h1 {
-    font-family: "myFont";
-    font-size: 3vw;
-    line-height: 4vw;
-    font-weight: 800;
-}
+@media (max-width: 425px){
+    .header>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    
+    .header>h2 {
+        font-family: "myFont";
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 300;
+    }
+    
+    .task>h3 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 800;
+    }
+    
+    .task>p {
+        font-family: "myFont";
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+    
+    .p-text {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    
+    
+    }
+    
+    .result>h1 {
+        font-family: "myFont";
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 800;
+    }
 
 
-.b-button {
-    background-color: cornflowerblue;
-    font-family: "myFont";
-    border: none;
-    color: aliceblue;
-    padding: 2vw 2vw 2vw 2vw;
-    margin-top: 5vw;
-    margin-bottom: 10vw;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 2vw;
-    transition: all 0.3s ease-out;
-    text-align: center;
-}
+    .menu-list{
+        padding-top: 0;
+    }
 
-.b-button:hover {
-    background-color: rgb(168, 112, 201);
+    .menu-list li {
+        display: block;
+    }
 
+    .menu-list li::after {
+        content: none;
+        font-size: 20px;
+    }
 
+    .menu-list a {
+        padding: 15px 0 10px;
+        margin: 0 30px;
+        font-size: 25px;
+    }
+    
+    .b-button {
+        padding: 15px 15px 15px 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
 }
