@@ -20,16 +20,23 @@ arrBirthdayCard[2] = {
 
 arrBirthdayCard[3] = {
     Name: "Юмі",
-    Data: "31.10.2023"
+    Data: "29.11.2023"
 }
 
 arrBirthdayCard[4] = {
     Name: "Міша",
-    Data: "19.11.1999",
+    Data: "02.12.1999",
 }
 
 var html = "";
 var isPartying = 0;
+
+
+
+
+function daysInMonth(month, year) {
+    return new Date(year, month, 0).getDate();
+}
 
 
 function output(item, i, array) {
@@ -63,7 +70,17 @@ function output(item, i, array) {
         else {
         }
     }
-    else {
+    else if (date1.getMonth() - currentDate.getMonth() == 1){
+        var countDays = 0;
+        countDays = daysInMonth(currentDate.getMonth() - 1, currentDate.getFullYear()) - currentDate.getDate();
+        if (countDays < 3){
+            if (date1.getDate() <= (3 - countDays)){
+                countDays += date1.getDate();
+                notification = "День Народження у " + item['Name'] + " за "
+                + countDays + " дні, відправ листівку" ;
+            
+            }
+        }
     }
 
 
